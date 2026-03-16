@@ -5,11 +5,16 @@ Abstract:
 LinuxPTP Master clock and Slave clock.
 
 
-802.1AS gPTP boundary clock (BC): SW2000M TSN Swtich
+802.1AS gPTP boundary clock (BC): SW2000M TSN Swtich, set Port 9 as gPTP Slave and others ports as gPTP Master.
 
 
-gPTP Grandmaster: LinuxPTP with Master clock
+gPTP Grandmaster: Orin nano or AGX or NX, set as the gPTP Master clock, connect to SW2000M TSN Port 9.
 
 
-gPTP endpoint(slave):LinuxPTP with Slave clock
+gPTP endpoint(slave):LinuxPTP with Slave clock, connect to SW2000M TSN Port 1 via a 100/1000BASE-T1 Media convertor(MC1100)
 *Linux PC Network Adapter must support IEEE1588, such as Intel I210,I217,I218,I219,I225 Network Adapter. 
+
+
+gPTP endpoint(slave):Lidar, (Such as AT128 or M1P Lidar). gPTP slave clock. connect to SW2000M TSN Port 2 to Port 5...
+
+Now, the sample gPTP network set up done.
