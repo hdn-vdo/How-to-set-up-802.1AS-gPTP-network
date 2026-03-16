@@ -21,4 +21,9 @@ LinuxPTP with Slave clock, connect to SW2000M TSN Port 1 via a 100/1000BASE-T1 M
 # gPTP endpoint(slave):
 Lidar, (Such as AT128 or M1P Lidar). gPTP slave clock. connect to SW2000M TSN Port 2 to Port 5...
 
+
+# gPTP endpoint(slave):
+other cotrol unit, set as gPTP slave clock, connect to SW2000M TSN other ports.
+
+# Complete
 Now, the sample gPTP network set up done.
